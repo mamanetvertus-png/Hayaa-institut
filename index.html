@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Protège tes enfants avec pudeur — Hayaa Institut × Maman &amp; Vertus</title>
+<meta name="description" content="La 1ère formation francophone d'éducation corporelle islamique. Protège tes enfants avec pudeur, science et foi. +195 familles protégées.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=DM+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   HAYAA INSTITUT × MAMAN & VERTUS
+   Le Sanctuaire de l'Innocence — Édition Intégrale
+   Brand System + Editorial Depth
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+:root {
+  --prune: #8d1a70;
+  --prune-light: #a83d8c;
+  --prune-deep: #6B1154;
+  --prune-glow: rgba(141,26,112,.25);
+  --gold: #D4AF37;
+  --gold-light: #E5C76B;
+  --gold-pale: #F5E6C4;
+  --gold-glow: rgba(212,175,55,.35);
+  --teal: #3A8C8C;
+  --teal-deep: #2d6e6e;
+  --teal-glow: rgba(58,140,140,.25);
+  --peach: #FFCBA4;
+  --peach-light: #FFE5D0;
+  --blush: #FFF0F5;
+  --rose: #F8E1E8;
+  --lavender: #F3E8F5;
+  --cream: #FFFAF8;
+  --cream-dark: #F5EDE8;
+  --warm-white: #fefcf9;
+  --text: #2D1F3D;
+  --text-muted: #6B5A7A;
+  --text-soft: #8a7a96;
+  --white: #fff;
+  --glass: rgba(255,255,255,.72);
+  --glass-border: rgba(212,175,55,.18);
+  --glass-shadow: rgba(141,26,112,.08);
+  --deep-purple: #4A3555;
+  --gradient-signature: linear-gradient(135deg, var(--prune), var(--gold));
+  --gradient-signature-rev: linear-gradient(135deg, var(--gold), var(--prune));
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --section-pad: clamp(80px,12vw,140px);
+  --container: 1280px;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 40px;
+  --radius-full: 100px;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--text);
+  overflow-x: hidden;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: rgba(141,26,112,.1); color: var(--prune); }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; margin: 0; padding: 0; }
+img { max-width: 100%; }
+
+/* ━━━ PARTICLES LAYER ━━━ */
+.particles {
+  position: fixed; inset: 0;
+  pointer-events: none; z-index: 1; overflow: hidden;
+}
+.particle {
+  position: absolute; width: 4px; height: 4px;
+  background: var(--gold); border-radius: 50%; opacity: 0;
+  animation: rise 14s ease-in-out infinite;
+  box-shadow: 0 0 6px var(--gold), 0 0 15px var(--gold-glow);
+}
+@keyframes rise {
+  0%,100% { opacity: 0; transform: translateY(100vh) scale(.3); }
+  15%,85% { opacity: .9; }
+  100% { transform: translateY(-10vh) scale(.8); }
+}
+.shooting-star {
+  position: absolute; width: 3px; height: 3px;
+  background: linear-gradient(45deg, var(--white), var(--gold));
+  border-radius: 50%; opacity: 0;
+  animation: shoot 3s ease-in-out infinite;
+  box-shadow: 0 0 6px 2px var(--gold), 0 0 12px 4px var(--gold-glow),
+              -80px 0 20px 1px rgba(255,255,255,.1), -160px 0 40px 2px rgba(255,255,255,.05);
+}
+.shooting-star::before {
+  content: ''; position: absolute;
+  width: 150px; height: 1px;
+  background: linear-gradient(90deg,rgba(212,175,55,.8),rgba(212,175,55,.4),transparent);
+  transform: translateX(-150px); border-radius: 50%;
+}
+@keyframes shoot {
+  0% { opacity: 0; transform: translate(0,0) rotate(-45deg); }
+  5% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translate(400px,400px) rotate(-45deg); }
+}
+.magic-orb {
+  position: absolute; border-radius: 50%; opacity: 0;
+  animation: orbPulse 8s ease-in-out infinite; filter: blur(1px);
+}
+.magic-orb::before {
+  content: ''; position: absolute; inset: -4px;
+  border-radius: 50%; background: inherit; filter: blur(15px); opacity: .5;
+}
+.magic-orb--gold {
+  background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
+  box-shadow: 0 0 30px var(--gold), 0 0 60px var(--gold-glow);
+}
+.magic-orb--prune {
+  background: radial-gradient(circle, var(--prune-light) 0%, transparent 70%);
+  box-shadow: 0 0 30px var(--prune), 0 0 60px var(--prune-glow);
+}
+.magic-orb--peach {
+  background: radial-gradient(circle, var(--peach) 0%, transparent 70%);
+  box-shadow: 0 0 20px var(--peach), 0 0 40px rgba(255,203,164,.3);
+}
+@keyframes orbPulse {
+  0%,100% { opacity: 0; transform: scale(.5) translate(0,0); }
+  20% { opacity: .7; }
+  50% { opacity: .9; transform: scale(1.2) translate(20px,-30px); }
+  80% { opacity: .6; }
+  100% { opacity: 0; transform: scale(.8) translate(-20px,20px); }
+}
+.sparkle {
+  position: absolute; width: 2px; height: 2px;
+  background: var(--white); border-radius: 50%; opacity: 0;
+  animation: sparkle 2s ease-in-out infinite;
+}
+@keyframes sparkle {
+  0%,100% { opacity: 0; transform: scale(0) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1) rotate(180deg); }
+}
+.sparkle::before, .sparkle::after {
+  content: ''; position: absolute; background: var(--white);
+}
+.sparkle::before { width: 8px; height: 2px; left: -3px; top: 0; border-radius: 1px; }
+.sparkle::after { width: 2px; height: 8px; left: 0; top: -3px; border-radius: 1px; }
+
+/* ━━━ NOISE GRAIN ━━━ */
+.noise-grain {
+  position: fixed; inset: 0; z-index: 9999;
+  pointer-events: none; mix-blend-mode: overlay; opacity: .028;
+}
+
+/* ━━━ GLASSMORPHISM NAV ━━━ */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 24px 5%; display: flex; justify-content: space-between;
+  align-items: center;
+  transition: all .4s cubic-bezier(.4,0,.2,1);
+}
+.nav.scrolled {
+  padding: 16px 5%;
+  background: var(--glass);
+  backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px var(--glass-shadow);
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 14px; text-decoration: none;
+}
+.nav-logo-icon {
+  width: 48px; height: 48px;
+  background: linear-gradient(135deg, var(--prune), var(--gold));
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px var(--prune-glow);
+  transition: transform .3s;
+}
+.nav-logo:hover .nav-logo-icon { transform: scale(1.05); }
+.nav-logo-icon svg {
+  width: 26px; height: 26px;
+  fill: none; stroke: var(--white); stroke-width: 1.5;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.nav-logo-text {
+  font-family: var(--font-display);
+  font-size: 1.5rem; font-weight: 600; color: var(--prune);
+}
+.nav-menu { display: flex; gap: 40px; list-style: none; }
+.nav-menu a {
+  text-decoration: none; color: var(--text); font-weight: 500;
+  font-size: .95rem; position: relative; padding: 8px 0;
+  transition: color .3s;
+}
+.nav-menu a::after {
+  content: ''; position: absolute; bottom: 0; left: 0;
+  width: 0; height: 2px;
+  background: linear-gradient(90deg, var(--prune), var(--gold));
+  border-radius: 2px; transition: width .3s;
+}
+.nav-menu a:hover { color: var(--prune); }
+.nav-menu a:hover::after { width: 100%; }
+.nav-cta {
+  background: linear-gradient(135deg, var(--prune-deep), var(--prune));
+  color: var(--white); padding: 14px 32px;
+  border-radius: var(--radius-full); text-decoration: none;
+  font-weight: 600; font-size: .9rem;
+  display: flex; align-items: center; gap: 10px;
+  transition: all .4s;
+  box-shadow: 0 4px 25px var(--prune-glow);
+}
+.nav-cta svg {
+  width: 18px; height: 18px;
+  fill: none; stroke: currentColor; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 35px rgba(141,26,112,.35);
+}
+.nav-toggle {
+  display: none; flex-direction: column; gap: 6px;
+  cursor: pointer; padding: 10px; background: none; border: none;
+}
+.nav-toggle span {
+  display: block; width: 28px; height: 2px;
+  background: var(--prune); border-radius: 2px; transition: all .3s;
+}
+
+/* ━━━ UTILITY ━━━ */
+.section { padding: var(--section-pad) 5%; position: relative; }
+.section--white { background: var(--white); }
+.section--cream { background: var(--cream); }
+.section--gradient {
+  background: linear-gradient(180deg, var(--cream) 0%, var(--blush) 40%, var(--lavender) 75%, rgba(212,175,55,.06) 100%);
+}
+.section--warm {
+  background: linear-gradient(180deg, var(--warm-white) 0%, var(--cream) 100%);
+}
+.section--prune {
+  background: linear-gradient(135deg, var(--prune-deep) 0%, var(--prune) 45%, var(--gold) 100%);
+  color: var(--white);
+}
+.container { max-width: var(--container); margin: 0 auto; }
+.section-header { text-align: center; max-width: 700px; margin: 0 auto 70px; }
+.section-label {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: linear-gradient(135deg, rgba(141,26,112,.08), rgba(74,53,85,.06), rgba(212,175,55,.1));
+  color: var(--prune); padding: 10px 24px;
+  border: 1px solid rgba(212,175,55,.15);
+  border-radius: var(--radius-full);
+  font-size: .85rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .5px; margin-bottom: 24px;
+}
+.section-label svg {
+  width: 18px; height: 18px; fill: none;
+  stroke: var(--prune); stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem,4.5vw,3.2rem);
+  font-weight: 600; color: var(--text);
+  margin-bottom: 18px; letter-spacing: -.02em;
+}
+.section-title .accent { color: var(--prune); position: relative; white-space: nowrap; }
+.section-title .accent::after {
+  content: ''; position: absolute; bottom: 4px; left: 0;
+  width: 100%; height: 10px;
+  background: linear-gradient(90deg, var(--prune), var(--gold));
+  opacity: .25; z-index: -1; border-radius: 6px; transform: skewX(-3deg);
+}
+.section-subtitle {
+  font-size: 1.15rem; color: var(--text-muted); line-height: 1.7;
+}
+
+/* ━━━ BUTTONS ━━━ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 12px; padding: 18px 40px; border-radius: var(--radius-full);
+  font-weight: 600; font-size: 1rem; text-decoration: none;
+  transition: all .4s cubic-bezier(.4,0,.2,1);
+  cursor: pointer; border: none; font-family: var(--font-body);
+}
+.btn svg {
+  width: 20px; height: 20px; fill: none;
+  stroke: currentColor; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.btn--primary {
+  background: linear-gradient(135deg, var(--prune-deep), var(--prune));
+  color: var(--white);
+  box-shadow: 0 6px 25px rgba(141,26,112,.3);
+  transition: all .4s cubic-bezier(.4,0,.2,1);
+}
+.btn--primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(141,26,112,.4);
+}
+.btn--teal {
+  background: linear-gradient(135deg, var(--teal), var(--teal-deep));
+  color: var(--white);
+  box-shadow: 0 8px 35px var(--teal-glow);
+}
+.btn--teal:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 45px var(--teal-glow);
+}
+.btn--secondary {
+  background: var(--white); color: var(--text);
+  border: 1.5px solid rgba(212,175,55,.35);
+  box-shadow: 0 4px 15px rgba(74,53,85,.06);
+}
+.btn--secondary svg { stroke: var(--gold) !important; }
+.btn--secondary:hover {
+  border-color: var(--gold);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(212,175,55,.18);
+}
+.btn--whatsapp {
+  background: #25D366; color: var(--white);
+  padding: 22px 50px; font-size: 1.1rem;
+  box-shadow: 0 12px 45px rgba(37,211,102,.4);
+}
+.btn--whatsapp svg {
+  width: 26px; height: 26px; fill: currentColor; stroke: none;
+}
+.btn--whatsapp:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 55px rgba(37,211,102,.5);
+}
+
+/* ━━━ REVEAL SYSTEM ━━━ */
+[data-reveal] { opacity: 0; transform: translateY(35px); }
+[data-reveal].revealed {
+  animation: fadeUp .8s cubic-bezier(.22,1,.36,1) forwards;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(35px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.masked { overflow: hidden; }
+.masked-inner {
+  display: block; transform: translateY(130%);
+  transition: transform 1.05s cubic-bezier(.22,1,.36,1);
+}
+.masked.revealed .masked-inner { transform: translateY(0); }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   §1 — HERO — BREATHING HALO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.hero {
+  min-height: 100vh; display: flex; align-items: center;
+  justify-content: center; position: relative;
+  padding: 140px 5% 100px; overflow: hidden;
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, var(--lavender) 0%, transparent 50%),
+              radial-gradient(ellipse 60% 50% at 100% 50%, var(--peach-light) 0%, transparent 40%),
+              radial-gradient(ellipse 50% 40% at 0% 80%, var(--rose) 0%, transparent 40%),
+              var(--cream);
+}
+.hero-halo {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px; height: 700px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(212,175,55,.12) 0%, rgba(74,53,85,.08) 35%, rgba(141,26,112,.05) 60%, transparent 70%);
+  animation: breathe 8s ease-in-out infinite alternate;
+}
+.hero-halo-ring {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid rgba(212,175,55,.1);
+  animation: breathe 8s ease-in-out infinite alternate-reverse;
+}
+.hero-halo-ring--outer { width: 520px; height: 520px; }
+.hero-halo-ring--inner {
+  width: 340px; height: 340px;
+  border-color: rgba(141,26,112,.06);
+  animation-duration: 10s; animation-direction: alternate;
+}
+@keyframes breathe {
+  0%   { transform: translate(-50%,-50%) scale(1);   opacity: .7; }
+  50%  { transform: translate(-50%,-50%) scale(1.15); opacity: 1;  }
+  100% { transform: translate(-50%,-50%) scale(.95);  opacity: .6; }
+}
+.hero-orb {
+  position: absolute; border-radius: 50%;
+  filter: blur(80px); opacity: .4;
+  animation: orbDrift 25s ease-in-out infinite;
+}
+.hero-orb--1 {
+  width: 400px; height: 400px;
+  background: linear-gradient(135deg, var(--peach), var(--gold-pale), var(--rose));
+  top: -12%; right: -8%;
+}
+.hero-orb--2 {
+  width: 300px; height: 300px;
+  background: linear-gradient(135deg, var(--lavender), rgba(74,53,85,.2), var(--blush));
+  bottom: 8%; left: -6%; animation-delay: -8s;
+}
+@keyframes orbDrift {
+  0%,100% { transform: translate(0,0) scale(1); }
+  25% { transform: translate(40px,-40px) scale(1.08); }
+  50% { transform: translate(-30px,30px) scale(.95); }
+  75% { transform: translate(25px,15px) scale(1.03); }
+}
+.hero-content { position: relative; z-index: 10; text-align: center; max-width: 820px; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 12px;
+  background: linear-gradient(135deg, rgba(245,230,196,.4), rgba(255,250,248,.8));
+  backdrop-filter: blur(12px);
+  padding: 12px 28px; border-radius: var(--radius-full);
+  border: 1px solid rgba(212,175,55,.25);
+  margin-bottom: 35px; font-size: .9rem;
+  color: var(--gold); font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+.hero-badge svg {
+  width: 20px; height: 20px; fill: none;
+  stroke: var(--gold); stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.hero h1 { margin-bottom: 0; }
+.hero h1 .masked-inner {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 600; line-height: 1.1;
+  color: var(--text); letter-spacing: -.02em; padding-bottom: 6px;
+}
+.hero h1 em { font-style: italic; color: var(--prune); font-weight: 700; }
+.hero h1 .gold { color: var(--gold); }
+.hero-subtitle {
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  color: var(--text-muted); max-width: 600px;
+  margin: 32px auto 0; line-height: 1.75;
+}
+.hero-subtitle strong { color: var(--prune); font-weight: 600; }
+.hero-rule {
+  width: 60px; height: 1px; margin: 34px auto;
+  background: linear-gradient(90deg, transparent, var(--prune), var(--gold), transparent);
+  transform: scaleX(0); transition: transform 1.4s cubic-bezier(.22,1,.36,1);
+}
+.hero-rule.revealed { transform: scaleX(1); }
+.hero-stats {
+  display: flex; justify-content: center; gap: 60px;
+  margin-bottom: 40px;
+}
+.hero-stat { text-align: center; }
+.hero-stat-value {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  color: var(--prune); line-height: 1;
+  display: flex; align-items: baseline; justify-content: center; gap: 4px;
+}
+.hero-stat-value span { font-size: .5em; color: var(--gold); }
+.hero-stat-label { font-size: .85rem; color: var(--text-muted); margin-top: 6px; font-weight: 500; }
+.hero-actions {
+  display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;
+}
+.hero-scroll {
+  position: absolute; bottom: 35px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  opacity: 0; animation: fadeUp 1s ease 2.5s forwards;
+}
+.hero-scroll span {
+  font-size: .6rem; font-weight: 600;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: var(--text-muted);
+}
+.hero-scroll-line {
+  width: 1px; height: 34px;
+  background: linear-gradient(to bottom, var(--prune), var(--gold), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+@keyframes scrollPulse {
+  0%,100% { transform: translateY(0); opacity: 1; }
+  50%     { transform: translateY(10px); opacity: .3; }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   §2 — PROMESSE — ORB + TEXT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.promise-grid {
+  display: grid; grid-template-columns: 1fr 1.3fr;
+  gap: 80px; align-items: center;
+}
+.promise-orb {
+  width: 320px; height: 320px; border-radius: 50%; margin: 0 auto;
+  background: linear-gradient(135deg, var(--blush), var(--lavender), rgba(212,175,55,.12), var(--cream));
+  display: flex; align-items: center; justify-content: center;
+  position: relative; animation: orbFloat 6s ease-in-out infinite;
+}
+@keyframes orbFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+.promise-orb::before {
+  content: ''; position: absolute; inset: -16px;
+  border-radius: 50%; border: 1px solid rgba(212,175,55,.12);
+  animation: orbFloat 6s ease-in-out infinite reverse;
+}
+.promise-orb svg {
+  width: 80px; height: 80px; fill: none;
+  stroke: var(--prune); stroke-width: 1;
+  stroke-linecap: round; stroke-linejoin: round; opacity: .7;
+}
+.float-badge {
+  position: absolute; bottom: 20px; right: -10px;
+  background: var(--white); border-radius: var(--radius-md);
+  padding: 18px 26px; box-shadow: 0 10px 40px rgba(0,0,0,.06);
+  border: 1px solid rgba(212,175,55,.12);
+}
+.float-badge-val {
+  font-family: var(--font-display); font-size: 1.8rem;
+  font-weight: 700; color: var(--prune); line-height: 1;
+}
+.float-badge-val span { font-size: .5em; color: var(--gold); vertical-align: super; }
+.float-badge-lbl { font-size: .75rem; color: var(--text-muted); margin-top: 3px; }
+.promise-text h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 600; color: var(--text); line-height: 1.2;
+  margin-bottom: 24px;
+}
+.promise-text .accent { color: var(--prune); }
+.promise-lead {
+  font-size: 1.15rem; line-height: 1.75;
+  color: var(--text-muted); margin-bottom: 18px; font-weight: 300;
+}
+.promise-body {
+  font-size: .95rem; line-height: 1.75;
+  color: var(--text-muted); margin-bottom: 14px;
+}
+.divider {
+  width: 50px; height: 1px; margin: 28px 0;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+.keywords { display: flex; gap: 28px; flex-wrap: wrap; }
+.kw {
+  display: flex; align-items: center; gap: 8px;
+  font-size: .82rem; font-weight: 600; color: var(--prune);
+  letter-spacing: .06em; text-transform: uppercase;
+}
+.kw svg {
+  width: 16px; height: 16px; fill: none; stroke: var(--gold);
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   §3 — PILIERS — BENTO GRID
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.bento {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto; gap: 22px;
+}
+.bento-card:first-child { grid-row: 1 / 3; }
+.bento-card {
+  background: var(--glass); backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl); padding: 40px 34px;
+  position: relative; overflow: hidden;
+  transition: all .5s cubic-bezier(.22,1,.36,1);
+}
+.bento-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px var(--glass-shadow), 0 0 0 1px var(--gold);
+}
+.bento-card::before {
+  content: ''; position: absolute; top: 0; left: 30px; right: 30px;
+  height: 3px; border-radius: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold-pale), transparent);
+}
+.bento-card::after {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 4px; background: linear-gradient(90deg, var(--prune), var(--gold));
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .4s;
+}
+.bento-card:hover::after { transform: scaleX(1); }
+.bento-num {
+  font-family: var(--font-display); font-size: 4.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, rgba(141,26,112,.06), rgba(212,175,55,.08));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1; position: absolute;
+  top: 18px; right: 22px; pointer-events: none;
+}
+.bento-icon {
+  width: 60px; height: 60px; border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 22px; transition: all .4s;
+}
+.bento-icon svg {
+  width: 28px; height: 28px; fill: none;
+  stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+  transition: all .3s;
+}
+.bento-icon--prune { background: linear-gradient(135deg, rgba(141,26,112,.1), rgba(243,232,245,.2)); }
+.bento-icon--prune svg { stroke: var(--prune); }
+.bento-icon--teal { background: linear-gradient(135deg, rgba(58,140,140,.1), rgba(58,140,140,.05)); }
+.bento-icon--teal svg { stroke: var(--teal); }
+.bento-icon--gold { background: linear-gradient(135deg, var(--gold-glow), rgba(245,230,196,.2)); }
+.bento-icon--gold svg { stroke: var(--gold); }
+.bento-card:hover .bento-icon { transform: scale(1.1) rotate(5deg); }
+.bento-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem; font-weight: 600;
+  color: var(--text); line-height: 1.3; margin-bottom: 14px;
+}
+.bento-card p {
+  font-size: .9rem; color: var(--text-muted);
+  line-height: 1.7; margin-bottom: 12px;
+}
+.bento-feat { margin-top: 18px; }
+.bento-feat li {
+  display: flex; align-items: center; gap: 10px;
+  font-size: .85rem; color: var(--text); padding: 6px 0;
+}
+.bento-feat li svg {
+  width: 16px; height: 16px; fill: none;
+  stroke: var(--teal); stroke-width: 2.5;
+  stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0;
+}
+.bento-card:first-child { display: flex; flex-direction: column; justify-content: space-between; }
+.bento-quote {
+  margin-top: auto; padding-top: 24px;
+  border-top: 1px solid rgba(212,175,55,.1);
+}
+.bento-quote p {
+  font-family: var(--font-display);
+  font-size: .95rem; font-style: italic;
+  color: var(--prune); line-height: 1.6; margin-bottom: 0;
+}
+.bento-quote .sig {
+  font-size: .78rem; color: var(--text-muted);
+  font-style: normal; margin-top: 8px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   §4 — ACCOMPAGNEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.accomp-grid {
+  display: grid; grid-template-columns: 1.1fr .9fr;
+  gap: 80px; align-items: center;
+}
+.accomp-text h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 600; color: var(--text);
+  line-height: 1.2; margin-bottom: 20px;
+}
+.accomp-text .accent { color: var(--prune); }
+.accomp-text .gold-text { color: var(--gold); }
+.accomp-text > p {
+  font-size: .95rem; color: var(--text-muted);
+  line-height: 1.75; margin-bottom: 32px;
+}
+.accomp-item {
+  display: flex; gap: 18px; padding: 24px 0;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(212,175,55,.08);
+}
+.accomp-item:last-child { border-bottom: none; }
+.accomp-item-icon {
+  width: 50px; height: 50px; border-radius: var(--radius-sm);
+  flex-shrink: 0; display: flex; align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--peach-light), var(--rose));
+  transition: all .3s;
+}
+.accomp-item:hover .accomp-item-icon {
+  transform: scale(1.08) rotate(3deg);
+  background: linear-gradient(135deg, rgba(141,26,112,.15), rgba(212,175,55,.2));
+}
+.accomp-item-icon svg {
+  width: 22px; height: 22px; fill: none;
+  stroke: var(--prune); stroke-width: 1.5;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.accomp-item h4 {
+  font-family: var(--font-display);
+  font-size: 1.05rem; font-weight: 600;
+  color: var(--text); margin-bottom: 4px;
+}
+.accomp-item p { font-size: .88rem; color: var(--text-muted); line-height: 1.65; margin: 0; }
+.stat-stack { display: flex; flex-direction: column; gap: 18px; }
+.stat-card {
+  background: var(--glass); backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg); padding: 28px 26px;
+  transition: all .4s ease;
+}
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px var(--glass-shadow);
+}
+.stat-top {
+  display: flex; align-items: center;
+  justify-content: space-between; margin-bottom: 10px;
+}
+.stat-val {
+  font-family: var(--font-display);
+  font-size: 2.2rem; font-weight: 700;
+  color: var(--prune); line-height: 1;
+}
+.stat-val .suf { font-size: .45em; color: var(--gold); vertical-align: super; }
+.stat-badge {
+  padding: 6px 14px; border-radius: 20px;
+  font-size: .68rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+.badge--teal { background: rgba(58,140,140,.1); color: var(--teal); }
+.badge--gold { background: rgba(212,175,55,.12); color: #b8940e; }
+.badge--prune { background: rgba(141,26,112,.08); color: var(--prune); }
+.stat-lbl { font-size: .85rem; color: var(--text-muted); }
+.stat-bar {
+  height: 4px; border-radius: 4px;
+  background: var(--cream-dark); margin-top: 14px; overflow: hidden;
+}
+.stat-fill {
+  height: 100%; border-radius: 4px;
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 1.2s cubic-bezier(.22,1,.36,1);
+}
+.stat-fill--teal { background: linear-gradient(90deg, var(--teal), var(--gold)); }
+.stat-fill--gold { background: linear-gradient(90deg, var(--prune), var(--gold)); }
+.stat-fill--prune { background: linear-gradient(90deg, var(--prune-deep), var(--prune), var(--gold)); }
+.revealed .stat-fill { transform: scaleX(1); }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   §5 — TÉMOIGNAGES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.temoignages-track {
+  display: flex; gap: 32px; overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; -ms-overflow-style: none;
+  padding: 20px 0;
+}
+.temoignages-track::-webkit-scrollbar { display: none; }
+.temoignage-card {
+  flex: 0 0 400px; scroll-snap-align: start;
+  background: linear-gradient(145deg, var(--blush), var(--cream));
+  border-radius: var(--radius-lg); padding: 40px;
+  position: relative; border: 1px solid rgba(212,175,55,.1);
+  transition: all .4s;
+}
+.temoignage-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 50px var(--glass-shadow);
+}
+.temoignage-quote-icon {
+  position: absolute; top: 25px; right: 30px;
+  width: 50px; height: 50px; fill: var(--gold); opacity: .2;
+}
+.temoignage-stars { display: flex; gap: 4px; margin-bottom: 24px; }
+.temoignage-stars svg { width: 20px; height: 20px; fill: var(--gold); }
+.temoignage-text {
+  font-size: 1.02rem; color: var(--text); line-height: 1.8;
+  margin-bottom: 28px; font-style: italic;
+}
+.temoignage-author { display: flex; align-items: center; gap: 16px; }
+.temoignage-avatar {
+  width: 56px; height: 56px;
+  background: linear-gradient(135deg, var(--prune), var(--gold));
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+}
+.temoignage-avatar svg {
+  width: 28px; height: 28px; fill: none;
+  stroke: var(--white); stroke-width: 1.5;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.temoignage-info h4 {
+  font-family: var(--font-display);
+  font-size: 1.1rem; font-weight: 600;
+  color: var(--text); margin-bottom: 3px;
+}
+.temoignage-info p { font-size: .88rem; color: var(--text-muted); margin: 0; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   §6 — CTA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.cta { position: relative; overflow: hidden; }
+.cta::before {
+  content: ''; position: absolute;
+  top: -60%; right: -20%; width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(212,175,55,.2) 0%, transparent 60%);
+  border-radius: 50%;
+}
+.cta-content {
+  position: relative; z-index: 10;
+  text-align: center; max-width: 700px; margin: 0 auto;
+}
+.cta-icon {
+  width: 100px; height: 100px;
+  background: linear-gradient(135deg, rgba(141,26,112,.2), rgba(74,53,85,.15), rgba(212,175,55,.2)); backdrop-filter: blur(10px);
+  border-radius: 50%; display: flex; align-items: center;
+  justify-content: center; margin: 0 auto 35px;
+  border: 1px solid rgba(212,175,55,.25);
+}
+.cta-icon svg {
+  width: 48px; height: 48px; fill: none;
+  stroke: var(--gold); stroke-width: 1.5;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.cta-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem,4.5vw,3rem);
+  font-weight: 600; color: var(--white); margin-bottom: 22px;
+}
+.cta-text {
+  font-size: 1.15rem; color: rgba(255,255,255,.85);
+  margin-bottom: 45px; line-height: 1.7;
+}
+
+/* ━━━ FOOTER ━━━ */
+.footer { background: linear-gradient(135deg, var(--text) 0%, #3a2848 50%, #2D1F3D 100%); color: var(--white); padding: 80px 5% 40px; position: relative; }
+.footer::before {
+  content: ''; position: absolute; top: 0; right: 0; width: 40%; height: 100%;
+  background: radial-gradient(ellipse at 100% 0%, rgba(212,175,55,.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 2fr repeat(3,1fr);
+  gap: 60px; max-width: var(--container); margin: 0 auto;
+}
+.footer-brand h3 {
+  font-family: var(--font-display);
+  font-size: 1.8rem; margin-bottom: 18px;
+  display: flex; align-items: center; gap: 12px;
+}
+.footer-brand h3 svg {
+  width: 32px; height: 32px; fill: none;
+  stroke: var(--gold); stroke-width: 1.5;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.footer-brand p {
+  color: rgba(255,255,255,.65); line-height: 1.75;
+  margin-bottom: 28px; max-width: 320px;
+}
+.footer-social { display: flex; gap: 14px; }
+.footer-social a {
+  width: 48px; height: 48px;
+  background: rgba(255,255,255,.08);
+  border-radius: 50%; display: flex; align-items: center;
+  justify-content: center; transition: all .3s;
+}
+.footer-social a svg {
+  width: 22px; height: 22px; fill: none;
+  stroke: var(--white); stroke-width: 1.8;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.footer-social a:hover { background: linear-gradient(135deg, var(--prune), var(--gold)); transform: translateY(-4px); }
+.footer-col h4 { font-size: 1rem; font-weight: 600; margin-bottom: 24px; color: var(--gold); }
+.footer-col li { margin-bottom: 14px; }
+.footer-col a { color: rgba(255,255,255,.65); transition: all .3s; }
+.footer-col a:hover { color: var(--white); }
+.footer-bottom {
+  max-width: var(--container); margin: 60px auto 0;
+  padding-top: 35px; border-top: 1px solid rgba(255,255,255,.1);
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;
+}
+.footer-bottom p { color: rgba(255,255,255,.45); font-size: .9rem; }
+
+/* ━━━ RESPONSIVE ━━━ */
+@media(max-width:1024px) {
+  .promise-grid { grid-template-columns: 1fr; gap: 50px; text-align: center; }
+  .promise-orb { width: 260px; height: 260px; }
+  .keywords { justify-content: center; }
+  .accomp-grid { grid-template-columns: 1fr; gap: 50px; }
+  .footer-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media(max-width:900px) {
+  .bento { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
+  .bento-card:first-child { grid-row: auto; }
+}
+@media(max-width:768px) {
+  .nav-menu, .nav-cta { display: none; }
+  .nav-toggle { display: flex; }
+  .hero-stats { gap: 35px; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .btn { width: 100%; max-width: 320px; }
+  .footer-grid { grid-template-columns: 1fr; text-align: center; }
+  .footer-social { justify-content: center; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+@media(max-width:480px) {
+  .hero-stats { flex-direction: column; gap: 20px; }
+  .temoignage-card { flex: 0 0 310px; }
+  .hero-halo { width: 400px; height: 400px; }
+  .hero-halo-ring--outer { width: 300px; height: 300px; }
+  .hero-halo-ring--inner { width: 200px; height: 200px; }
+  .float-badge { right: 50%; transform: translateX(50%); bottom: -18px; }
+}
+/* Nav mobile menu */
+.nav-mobile-menu {
+  display: none; position: fixed; top: 80px; left: 0; right: 0;
+  background: var(--glass); backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--glass-border);
+  flex-direction: column; padding: 10px 0;
+  transform: translateY(-120%); opacity: 0;
+  transition: transform .4s ease, opacity .3s;
+  z-index: 999;
+}
+.nav-mobile-menu.open { transform: translateY(0); opacity: 1; }
+.nav-mobile-menu a {
+  display: block; padding: 16px 30px;
+  font-weight: 500; font-size: .95rem; color: var(--text);
+  transition: all .2s;
+}
+.nav-mobile-menu a:hover { background: rgba(141,26,112,.04); color: var(--prune); }
+@media(max-width:768px) {
+  .nav-mobile-menu { display: flex; }
+}
+</style>
+</head>
+<body>
+
+<!-- PARTICLES -->
+<div class="particles" id="particles"></div>
+
+<!-- NOISE GRAIN -->
+<div class="noise-grain">
+  <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+    <filter id="ng"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="4" stitchTiles="stitch"></feTurbulence><feColorMatrix type="saturate" values="0"></feColorMatrix></filter>
+    <rect width="100%" height="100%" filter="url(#ng)"></rect>
+  </svg>
+</div>
+
+<!-- GLASSMORPHISM NAV -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+    <span class="nav-logo-text">Hayaa Institut</span>
+  </a>
+  <ul class="nav-menu">
+    <li><a href="#piliers">Les 3 Piliers</a></li>
+    <li><a href="#accomp">Accompagnement</a></li>
+    <li><a href="#temoignages">Témoignages</a></li>
+    <li><a href="#about">À propos</a></li>
+  </ul>
+  <a href="https://wa.me/33762005218?text=Salam%20je%20souhaite%20rejoindre%20la%20formation%20Hayaa%20Institut" class="nav-cta" target="_blank">
+    <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg>
+    Rejoindre
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-mobile-menu" id="navMobile">
+  <a href="#piliers">Les 3 Piliers</a>
+  <a href="#accomp">Accompagnement</a>
+  <a href="#temoignages">Témoignages</a>
+  <a href="#about">À propos</a>
+  <a href="https://wa.me/33762005218?text=Salam%20je%20souhaite%20rejoindre%20la%20formation%20Hayaa%20Institut" target="_blank" style="color:var(--prune);font-weight:600;">Rejoindre sur WhatsApp</a>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   §1 — HERO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section class="hero">
+  <div class="hero-halo"></div>
+  <div class="hero-halo-ring hero-halo-ring--outer"></div>
+  <div class="hero-halo-ring hero-halo-ring--inner"></div>
+  <div class="hero-orb hero-orb--1"></div>
+  <div class="hero-orb hero-orb--2"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge" data-reveal="">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+      <span>Hayaa Institut — Éducation Corporelle Islamique</span>
+    </div>
+    <h1>
+      <div class="masked" data-reveal="" data-delay="200">
+        <span class="masked-inner"><em>Protège</em> tes enfants</span>
+      </div>
+      <div class="masked" data-reveal="" data-delay="400">
+        <span class="masked-inner">avec <span class="gold">pudeur</span></span>
+      </div>
+    </h1>
+    <p class="hero-subtitle" data-reveal="" data-delay="700">
+      Le silence ne protège pas. <strong>La connaissance, oui.</strong><br>
+      La 1ère formation francophone qui transforme la pudeur en bouclier — avec science, foi et amour.
+    </p>
+    <div class="hero-rule" data-reveal="" data-delay="900"></div>
+    <div class="hero-stats" data-reveal="" data-delay="1000">
+      <div class="hero-stat">
+        <div class="hero-stat-value">195<span>+</span></div>
+        <div class="hero-stat-label">Familles protégées</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">40<span>h</span></div>
+        <div class="hero-stat-label">De formation</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">12</div>
+        <div class="hero-stat-label">Chapitres complets</div>
+      </div>
+    </div>
+    <div class="hero-actions" data-reveal="" data-delay="1200">
+      <a href="#piliers" class="btn btn--primary">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        Découvrir les programmes
+      </a>
+      <a href="https://wa.me/33762005218?text=Salam%20je%20souhaite%20rejoindre%20la%20formation%20Hayaa%20Institut" target="_blank" class="btn btn--secondary">
+        <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        Me contacter
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Explorer</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   §2 — PROMESSE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section class="section section--white" id="promesse">
+  <div class="container">
+    <div class="promise-grid">
+      <div style="position:relative" data-reveal="">
+        <div class="promise-orb">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <div class="float-badge">
+          <div class="float-badge-val">195<span>+</span></div>
+          <div class="float-badge-lbl">Familles protégées</div>
+        </div>
+      </div>
+      <div class="promise-text" data-reveal="" data-delay="200">
+        <h2>Confiance &amp; <span class="accent">Clarté</span></h2>
+        <p class="promise-lead">Protéger, c'est d'abord savoir parler.</p>
+        <p class="promise-body">Imagine un foyer où la pudeur n'est plus un mur de silence, mais un pont de confiance. Où tes enfants te posent leurs questions les plus intimes — parce qu'ils savent que tu auras les bons mots. Où tu n'as plus peur de mal dire, parce que tu sais exactement quoi transmettre, à quel âge, et comment.</p>
+        <p class="promise-body">La hayaa (pudeur saine) protège et élève. Le khajal (honte toxique) écrase et fait taire. Nous t'apprenons la différence — et c'est ce qui change tout.</p>
+        <p class="promise-body"><strong>Ce n'est pas un rêve. C'est le quotidien de 195+ familles qui ont traversé notre formation.</strong></p>
+        <div class="divider"></div>
+        <div class="keywords">
+          <div class="kw"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Sérénité</div>
+          <div class="kw"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Clarté</div>
+          <div class="kw"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Protection</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   §3 — LES 3 PILIERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section class="section section--gradient" id="piliers">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        Les 3 Piliers
+      </div>
+      <h2 class="section-title" data-reveal="">Les fondations de <span class="accent">l'armure invisible</span></h2>
+      <p class="section-subtitle" data-reveal="" data-delay="100">Trois piliers interdépendants qui protègent tes enfants avec pudeur. Chacun renforce les autres — ensemble, ils forment un bouclier.</p>
+    </div>
+
+    <div class="bento" data-reveal="" data-delay="250">
+      <!-- PILIER 1 — Grand -->
+      <div class="bento-card">
+        <div class="bento-num">01</div>
+        <div class="bento-icon bento-icon--prune">
+          <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"></path><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"></path></svg>
+        </div>
+        <h3>Ancrage Prophétique</h3>
+        <p>Chaque concept enseigné est enraciné dans le Coran et la Sunnah. Pas d'improvisation, pas de copier-coller occidental. Une architecture éducative légiférée qui donne à la pudeur son vrai sens : un bouclier, pas un bâillon. Al-Hayaa' protège et élève — Al-Khajal écrase et fait taire. Nous cultivons la première sans jamais créer la seconde.</p>
+        <ul class="bento-feat">
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Sources authentiques (Quran, Hadiths sahih)</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Fiqh de la puberté et du corps</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Le corps comme amana (dépôt sacré d'Allah)</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Recherche internationale (Finlande, Canada, Australie)</li>
+        </ul>
+        <div class="bento-quote">
+          <p>« La pudeur fait partie de la foi. »</p>
+          <div class="sig">— Hadith (Boukhari &amp; Muslim)</div>
+        </div>
+      </div>
+
+      <!-- PILIER 2 -->
+      <div class="bento-card">
+        <div class="bento-num">02</div>
+        <div class="bento-icon bento-icon--teal">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <h3>Pédagogie Adaptée</h3>
+        <p>Des scripts prêts à l'emploi, des ateliers pratiques filmés, des mises en scène par âge. Tu ne devines plus — tu sais exactement quoi dire, quand le dire, et comment. De 0 à 15 ans, chaque étape est couverte avec des outils concrets adaptés au développement de ton enfant.</p>
+        <ul class="bento-feat">
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Scripts clé en main par tranche d'âge</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>8 ateliers pratiques filmés</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Triangle Rouge, 5 Alarmes &amp; 3 Questions</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Bouclier Amana en 20 étapes</li>
+        </ul>
+      </div>
+
+      <!-- PILIER 3 -->
+      <div class="bento-card">
+        <div class="bento-num">03</div>
+        <div class="bento-icon bento-icon--gold">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87"></path><path d="M16 3.13a4 4 0 010 7.75"></path></svg>
+        </div>
+        <h3>Identité Forte</h3>
+        <p>Le résultat : des enfants qui connaissent leurs limites, respectent leur corps, savent dire NON et grandissent avec une pudeur positive — ni honte, ni naïveté. Des enfants qui viennent vers toi quand il y a un problème, parce que tu es leur source d'information fiable.</p>
+        <ul class="bento-feat">
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Pudeur positive (pas de honte toxique)</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Auto-défense physique &amp; verbale</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Résilience face aux écrans &amp; influences</li>
+          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>Cercles de confiance &amp; adultes sûrs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   §4 — ACCOMPAGNEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section class="section section--white" id="accomp">
+  <div class="container">
+    <div class="accomp-grid">
+      <div class="accomp-text" data-reveal="">
+        <div class="section-label" style="margin-bottom:18px;">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          Accompagnement Continu
+        </div>
+        <h2>Protéger aujourd'hui,<br><span class="accent">préparer</span> demain.<br><span class="gold-text">Pour la vie.</span></h2>
+        <p>Contrairement à un simple cours en ligne, Hayaa Institut t'accompagne dans la durée. Parce que tes enfants grandissent, et tes questions évoluent. De la sécurité corporelle (0-3 ans) aux premières règles de pudeur (3-6 ans), du consentement (6-10 ans) à la puberté et l'identité (10-15 ans) — chaque étape est couverte.</p>
+        <ul>
+          <li class="accomp-item">
+            <div class="accomp-item-icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"></path><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"></path></svg></div>
+            <div><h4>Mises à jour des connaissances</h4><p>Nouvelles recherches intégrées, contenus enrichis chaque session, replay illimité.</p></div>
+          </li>
+          <li class="accomp-item">
+            <div class="accomp-item-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path></svg></div>
+            <div><h4>Support Q&amp;R Hebdomadaire</h4><p>Chaque semaine, pose tes questions en direct à Umm Adam. Un vrai accompagnement humain.</p></div>
+          </li>
+          <li class="accomp-item">
+            <div class="accomp-item-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87"></path><path d="M16 3.13a4 4 0 010 7.75"></path></svg></div>
+            <div><h4>Groupe de soutien actif</h4><p>195+ mamans qui partagent, s'entraident et grandissent ensemble.</p></div>
+          </li>
+          <li class="accomp-item">
+            <div class="accomp-item-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+            <div><h4>Accès à vie — Replays illimités</h4><p>40h de contenu accessible pour toujours. Reviens-y quand ton enfant grandit.</p></div>
+          </li>
+        </ul>
+      </div>
+
+      <div data-reveal="" data-delay="250">
+        <div class="stat-stack">
+          <div class="stat-card">
+            <div class="stat-top">
+              <div class="stat-val">40<span class="suf">h</span></div>
+              <span class="stat-badge badge--teal">Formation</span>
+            </div>
+            <div class="stat-lbl">De contenu en direct + replays illimités</div>
+            <div class="stat-bar"><div class="stat-fill stat-fill--teal" style="width:92%"></div></div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-top">
+              <div class="stat-val">12</div>
+              <span class="stat-badge badge--gold">Chapitres</span>
+            </div>
+            <div class="stat-lbl">De la naissance à 15 ans — tout couvert</div>
+            <div class="stat-bar"><div class="stat-fill stat-fill--gold" style="width:100%"></div></div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-top">
+              <div class="stat-val">52</div>
+              <span class="stat-badge badge--prune">Sessions Q&amp;R</span>
+            </div>
+            <div class="stat-lbl">Une session par semaine pendant 1 an</div>
+            <div class="stat-bar"><div class="stat-fill stat-fill--prune" style="width:85%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   §5 — TÉMOIGNAGES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section class="section section--warm" id="temoignages">
+  <div class="section-header">
+    <div class="section-label">
+      <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path></svg>
+      Témoignages
+    </div>
+    <h2 class="section-title" data-reveal="">Ce que disent <span class="accent">nos mamans</span></h2>
+    <p class="section-subtitle" data-reveal="" data-delay="100">195+ familles protègent leurs enfants avec pudeur — voici leurs mots</p>
+  </div>
+  <div class="container">
+    <div class="temoignages-track">
+      <article class="temoignage-card">
+        <svg class="temoignage-quote-icon" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>
+        <div class="temoignage-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+        <p class="temoignage-text">"Avant la formation, le sujet du corps était un mur dans notre maison. Aujourd'hui, ma fille de 8 ans me pose ses questions naturellement. Le Sanctuaire a transformé notre relation."</p>
+        <div class="temoignage-author"><div class="temoignage-avatar"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><div class="temoignage-info"><h4>Samira</h4><p>Maman de 3 enfants, Lyon</p></div></div>
+      </article>
+
+      <article class="temoignage-card">
+        <svg class="temoignage-quote-icon" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>
+        <div class="temoignage-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+        <p class="temoignage-text">"J'avais tellement peur de mal faire. Les scripts par âge m'ont donné une confiance que je n'imaginais pas. Mes enfants me voient comme un repère sûr maintenant."</p>
+        <div class="temoignage-author"><div class="temoignage-avatar"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><div class="temoignage-info"><h4>Fatima</h4><p>Maman de 4 enfants, Paris</p></div></div>
+      </article>
+
+      <article class="temoignage-card">
+        <svg class="temoignage-quote-icon" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>
+        <div class="temoignage-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+        <p class="temoignage-text">"Le Triangle Rouge et les 5 Alarmes ont donné à mon fils des outils concrets. Il sait identifier une situation dangereuse. Ça n'a pas de prix. Alhamdulillah."</p>
+        <div class="temoignage-author"><div class="temoignage-avatar"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><div class="temoignage-info"><h4>Khadija</h4><p>Maman de 2 enfants, Bruxelles</p></div></div>
+      </article>
+
+      <article class="temoignage-card">
+        <svg class="temoignage-quote-icon" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>
+        <div class="temoignage-stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+        <p class="temoignage-text">"Enfin une approche qui allie modernité et valeurs islamiques pour protéger nos enfants. Je recommande à toutes les mamans qui veulent briser le tabou avec pudeur."</p>
+        <div class="temoignage-author"><div class="temoignage-avatar"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div><div class="temoignage-info"><h4>Aïcha</h4><p>Maman de 5 enfants, Marseille</p></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   §6 — CTA FINAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section class="section section--prune cta" id="contact">
+  <div class="cta-content" data-reveal="">
+    <div class="cta-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+    </div>
+    <h2 class="cta-title">Le corps de ton enfant est une amana.<br>Protège-le avec pudeur.</h2>
+    <p class="cta-text">Si ton enfant est assez grand pour poser la question, il est assez grand pour entendre une réponse adaptée. Rejoins les 195+ familles qui ont transformé le silence en bouclier — avec science, foi et amour.</p>
+    <a href="https://wa.me/33762005218?text=Salam%20je%20souhaite%20rejoindre%20la%20formation%20Hayaa%20Institut" class="btn btn--whatsapp" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a10.1 10.1 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+      Rejoindre sur WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="about">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        Hayaa Institut
+      </h3>
+      <p>La 1ère formation francophone d'éducation corporelle islamique. Protège tes enfants avec pudeur, science et foi.</p>
+      <div class="footer-social">
+        <a href="https://instagram.com/hayaa.institut" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+        <a href="https://wa.me/33762005218" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path></svg></a>
+        <a href="mailto:contact@hayaa-institut.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Programme</h4>
+      <ul>
+        <li><a href="#piliers">Les 3 Piliers</a></li>
+        <li><a href="#accomp">Accompagnement</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Ressources</h4>
+      <ul>
+        <li><a href="#">Guide gratuit</a></li>
+        <li><a href="#">Blog Hayaa</a></li>
+        <li><a href="#">Podcast</a></li>
+        <li><a href="#">Maman &amp; Vertus</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:contact@hayaa-institut.com">contact@hayaa-institut.com</a></li>
+        <li><a href="tel:+33762005218">+33 7 62 00 52 18</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">CGV</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Hayaa Institut × Maman &amp; Vertus. Tous droits réservés.</p>
+    <p>Le corps est une amana. Protège-le avec pudeur, science et foi.</p>
+  </div>
+</footer>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SCRIPTS — PARTICLES + REVEALS + SMOOTH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<script>
+(function(){
+  'use strict';
+  var p = document.getElementById('particles');
+
+  /* ── Golden Dust Particles (rising) ── */
+  for(var i=0; i<35; i++){
+    var d = document.createElement('div');
+    d.className = 'particle';
+    d.style.left = Math.random()*100+'%';
+    d.style.animationDelay = Math.random()*14+'s';
+    d.style.animationDuration = (10+Math.random()*8)+'s';
+    p.appendChild(d);
+  }
+
+  /* ── Shooting Stars — disabled ── */
+
+  /* ── Magic Orbs — disabled ── */
+
+  /* ── Sparkles — disabled ── */
+
+  /* ── Nav scroll effect ── */
+  var nav = document.getElementById('nav');
+  window.addEventListener('scroll', function(){
+    nav.classList.toggle('scrolled', window.pageYOffset > 60);
+  }, {passive: true});
+
+  /* ── Mobile menu toggle ── */
+  var toggle = document.getElementById('navToggle');
+  var mobile = document.getElementById('navMobile');
+  if(toggle && mobile){
+    toggle.addEventListener('click', function(){
+      toggle.classList.toggle('open');
+      mobile.classList.toggle('open');
+    });
+    mobile.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ toggle.classList.remove('open'); mobile.classList.remove('open'); });
+    });
+  }
+
+  /* ── Smooth Scroll ── */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var t = document.querySelector(this.getAttribute('href'));
+      if(t){
+        var y = t.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({top: y, behavior: 'smooth'});
+      }
+    });
+  });
+
+  /* ── Reveal Observer ── */
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        var d = parseInt(e.target.getAttribute('data-delay')||0);
+        setTimeout(function(){ e.target.classList.add('revealed'); }, d);
+        obs.unobserve(e.target);
+      }
+    });
+  }, {threshold: 0.08, rootMargin: '-40px'});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){ obs.observe(el); });
+
+  /* ── Magnetic Buttons ── */
+  document.querySelectorAll('.btn').forEach(function(btn){
+    var af;
+    btn.addEventListener('mousemove', function(e){
+      cancelAnimationFrame(af);
+      af = requestAnimationFrame(function(){
+        var r = btn.getBoundingClientRect();
+        var dx = (e.clientX - r.left - r.width/2) * .25;
+        var dy = (e.clientY - r.top - r.height/2) * .25;
+        btn.style.transform = 'translate('+dx+'px,'+dy+'px)';
+      });
+    });
+    btn.addEventListener('mouseleave', function(){
+      cancelAnimationFrame(af);
+      btn.style.transition = 'transform .4s cubic-bezier(.22,1,.36,1)';
+      btn.style.transform = 'translate(0,0)';
+      setTimeout(function(){ btn.style.transition = ''; }, 400);
+    });
+    btn.addEventListener('mouseenter', function(){ btn.style.transition = ''; });
+  });
+
+  /* ── Testimonials Auto-scroll ── */
+  var track = document.querySelector('.temoignages-track'), hovering = false;
+  if(track){
+    setInterval(function(){
+      if(!hovering){
+        var card = track.querySelector('.temoignage-card');
+        if(card){
+          var w = card.offsetWidth + 32;
+          var max = track.scrollWidth - track.clientWidth;
+          if(track.scrollLeft >= max - 10){
+            track.scrollTo({left: 0, behavior: 'smooth'});
+          } else {
+            track.scrollBy({left: w, behavior: 'smooth'});
+          }
+        }
+      }
+    }, 5000);
+    track.onmouseenter = function(){ hovering = true; };
+    track.onmouseleave = function(){ hovering = false; };
+  }
+
+})();
+</script>
+</body>
+</html>
